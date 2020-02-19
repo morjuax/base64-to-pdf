@@ -15,7 +15,7 @@ export class AppComponent {
   }
 
   donwloadPdf() {
-    let linkSource = "data:application/pdf;base64," + this.pdfInBase64;
+    let linkSource = `data:application/pdf;base64,${this.pdfInBase64}`;
     let downloadLink = document.createElement("a");
     let fileName = "sample.pdf";
 
